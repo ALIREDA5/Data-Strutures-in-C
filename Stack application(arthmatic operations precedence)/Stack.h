@@ -8,7 +8,7 @@
 #ifndef STACK_H_
 #define STACK_H_
 
-typedef   char   StackEntry;
+typedef   double   StackEntry;
 
 typedef struct stacknode
 {
@@ -30,7 +30,7 @@ int StackEmbty(Stack * ps);
 int Pop(StackEntry * e,Stack * ps);
 int StackSize(Stack * ps);
 void StackClear(Stack * ps);
-void StackCopy(StackEntry *pe, Stack * ps);
+void StackTop(StackEntry *pe, Stack * ps);
 void TraverseStack(Stack * ps , void (*pf)(StackEntry e));
 
 #endif /* STACK_H_ */

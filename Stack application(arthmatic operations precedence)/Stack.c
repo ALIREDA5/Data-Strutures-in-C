@@ -71,7 +71,7 @@ void StackClear(Stack * ps)
 
 }
 // fun to only copy the stack top
-void StackCopy(StackEntry *pe, Stack * ps)
+void StackTop(StackEntry *pe, Stack * ps)
 {
 	*pe = ps->top->entry;
 
